@@ -17,3 +17,6 @@ zapracuje do skillu, aby je měli i ostatní. Děkujeme!
 - Lhůta pro úmrtí: skill (SKILL.md i `ged_import.py`) počítá s 30 lety, podle zákona o matrikách (301/2000 Sb.) jsou to
   myslím 75 let od posledního zápisu (narození 100, manželství i úmrtí 75). Prosím ověřit – `ged_import.py` pak hlásí
   úmrtí z 80. let 20. století jako „matriky online“.
+- I nástroj WebFetch (mimo proxy) v cloudové relaci hlásí u nepovolené domény jen `ENOTFOUND`, takže ani čtení
+  jednotlivých stránek archivu neobejde síťovou politiku. Skill by měl na začátku Fáze 2 v cloudu jedním příkazem
+  otestovat dostupnost portálu a hned skončit s návodem (povolit domény / pracovat lokálně), ať se neplýtvá kredity.

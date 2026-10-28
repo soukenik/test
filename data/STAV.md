@@ -39,6 +39,8 @@ pak konec `research_log.md` a sekci „Rozpracováno“.
   Zbývá: datum úmrtí Jindřišky, kde se narodil Otto, sňatek Jana a Anastázie, sňatek Otty a Jindřišky, čísla domů,
   rodiče Jindřišky (Meislovi), kdy byl Jan starostou.
 - Čeká se na povolení domén archivů v nastavení cloudového prostředí (uživatel nastavuje z mobilu).
+  Ověřeno znovu 28. 10. 2026 v nové cloudové relaci: pořád zablokováno (www.mza.cz, actapublica.eu, kramerius5.nkp.cz, ndk.cz).
+  Buď povolit domény, nebo pokračovat na vlastním počítači podle `ZADANI_DESKTOP.md`.
 - Fáze 2 (matriky): Rudimov spadá pod **MZA Brno (Acta Publica)** – pro skill bez nástroje, jen přes prohlížeč.
   **Z cloudové relace jsou všechny archivní portály zablokované sítí** (proxy vrací 403 na www.mza.cz, actapublica.eu,
   kramerius5.nkp.cz, ndk.cz, nominatim.openstreetmap.org…). Potřeba povolit domény v nastavení prostředí,
