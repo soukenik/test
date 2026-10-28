@@ -18,35 +18,38 @@
 # Neznámý otec nemanželského dítěte: dict(n="otec neuveden", st="unk", f=[], note="…")
 
 P = {
- 1: dict(n="Miriam Vojtásková", y="", st="fam", sex="F", f=[],
-         note="Žijící – údaje jen základní. V rodině Miri, dcera Petra Vojtáska. "
-              "Výchozí osoba zvolena prozatímně – potvrdit s rodinou."),
- 2: dict(n="Petr Vojtásek", y="", st="fam", f=[],
-         note="Žijící – údaje jen základní. Podle rodiny vnuk Jana a Anastázie Vojtáskových."),
- 3: dict(n="matka Miriam (doplnit)", y="", st="unk", f=[]),
- 4: dict(n="otec Petra (doplnit)", y="", st="unk", f=[],
-         note="Dítě Jana a Anastázie. Že jde o syna (otce Petra), plyne jen z toho, že Petr nese příjmení Vojtásek – ověřit."),
- 5: dict(n="matka Petra (doplnit)", y="", st="unk", f=[]),
- 8: dict(n="Jan Vojtásek", y="1908–1982", st="fam",
-         f=["* 31. 7. 1908", "bydlel v Rudimově u Luhačovic", "† 26. 6. 1982"],
-         note="Data z tužkou psaného zápisu na zadní straně rámu rodinné fotografie. Na fotografii v uniformě "
-              "s vyznamenáními (sbor a vyznamenání neurčeny). Na rámu psáno „Vojtášek“, rodina píše Vojtásek bez háčku."),
- 9: dict(n="Anastázie Viceníková (?)", y="1904–1976", st="fam",
-         f=["* 16. 4. 1904", "žena v domácnosti", "bydlela v Rudimově u Luhačovic", "† 2. 12. 1976 (?)"],
+ 1: dict(n="Petr Vojtásek", y="", st="fam", sex="M", f=[],
+         note="Žijící – údaje jen základní. Vnuk Jana a Anastázie Vojtáskových."),
+ 2: dict(n="Otto Vojtásek", y="1931–1984", st="fam",
+         f=["* 21. 9. 1931", "† 1984 Slavičín"],
+         note="Údaje od rodiny (Petr je jeho syn). Místo narození zatím neznámé – nejspíš Rudimov."),
+ 3: dict(n="Jindřiška Meislová", y="* 1938", st="fam", f=[],
+         note="Provdaná Vojtásková. Rodina uvedla přesné datum narození a „také ve Slavičíně“ – upřesnit, zda šlo o narození, "
+              "bydliště, nebo úmrtí. Dokud není jisté, že nežije, uvádíme jen rok narození."),
+ 4: dict(n="Jan Vojtásek", y="1908–1982", st="fam",
+         f=["* 31. 7. 1908 Rudimov (?)", "velitel hasičů, kapelník a starosta – podle rodiny", "bydlel v Rudimově u Luhačovic",
+            "† 26. 6. 1982"],
+         note="Data z tužkou psaného zápisu na zadní straně rámu rodinné fotografie; na fotografii v hasičské uniformě "
+              "s vyznamenáními. Podle rodiny byl velitelem hasičů, hlavním kapelníkem a starostou (obce Rudimov – ověřit). "
+              "Místo narození Rudimov jen podle rodiny („nejspíše“). Na rámu psáno „Vojtášek“, rodina píše Vojtásek bez háčku."),
+ 5: dict(n="Anastázie Viceníková (?)", y="1904–1976", st="fam",
+         f=["* 16. 4. 1904 Rudimov (?)", "žena v domácnosti", "bydlela v Rudimově u Luhačovic", "† 2. 12. 1976 (?)"],
          note="Provdaná Vojtásková. Rodné příjmení na rámu špatně čitelné (Viceníková / Vicaníková / Vicenáková?). "
-              "V datu úmrtí je první číslice přepsaná – 2. 12., nebo 7. 12. 1976."),
+              "V datu úmrtí je první číslice přepsaná – 2. 12., nebo 7. 12. 1976. Místo narození Rudimov jen podle rodiny („nejspíše“)."),
 }
 
 # Rody = osm větví podle pradědečků a prababiček (čísla 8–15). Doplňte, jakmile je znáte:
 # 8: ("Novákové", "Jedna věta, kdo to byli a odkud – ukáže se na webu u rodu."),
 LINES = {
- 8: ("Vojtáskové", "Rod z Rudimova u Luhačovic na Zlínsku."),
- 9: ("Viceníkovi (?)", "Rod Anastázie Vojtáskové; rodné příjmení zatím nejisté."),
+ 8: ("Vojtáskové", "Rod z Rudimova u Luhačovic na Zlínsku – Jan Vojtásek, hasič, kapelník a starosta."),
+ 10: ("Viceníkovi (?)", "Rod Anastázie Vojtáskové; rodné příjmení zatím nejisté."),
+ 12: ("Meislovi", "Rod Jindřišky Vojtáskové, roz. Meislové."),
 }
 
 # Příbuzní mimo přímou linii (sourozenci, strýcové…): k = číslo předka, ke kterému patří.
 # dict(k=16, n="Josef Novák (1865–1920)", t="Bratr Jana. Kovář v …", r=["klic_zapisu"])
 SIDE = [
+ dict(k=1, n="Miriam Vojtásková, roz. Kovářová", t="Manželka Petra Vojtáska. Žijící – údaje jen základní."),
 ]
 
 # Rozpory a otevřené otázky (na web do „Co hledáme“) jako dvojice (otázka, odpověď). Odpověď začněte
@@ -59,10 +62,10 @@ ISSUES = [
   "Otevřené: na rámu nejspíš Viceníková, možná Vicaníková nebo Vicenáková. Hledat v matrice narozených 1904."),
  ("Kdy přesně zemřela Anastázie?",
   "Otevřené: 2. 12. nebo 7. 12. 1976 (číslice na rámu přepsaná)."),
- ("Kdo byl otcem Petra Vojtáska?",
-  "Otevřené: syn Jana a Anastázie – jméno a data doplní rodina."),
  ("Kde se Jan a Anastázie narodili a vzali?",
-  "Otevřené: víme jen, že žili v Rudimově. Místa narození a sňatek zatím nejsou známé."),
+  "Otevřené: rodina myslí, že oba v Rudimově. Sňatek (asi 1928–1931, před narozením Otty) zatím neznámý."),
+ ("Byl Jan Vojtásek starostou Rudimova a velitelem tamních hasičů?",
+  "Otevřené: tak to říká rodina. Ověřit v kronice obce, v historii hasičského sboru a v novinách."),
 ]
 
 # Hypotézy o původu rodu nad rámec doložené linie (zobrazí se na stránce rodu):

@@ -19,3 +19,14 @@ Zarámovaná fotografie (`dokumenty/jan-a-anastazie-foto.jpg`) a tužkou psaný 
 - **Petr Vojtásek** je vnuk Jana a Anastázie.
 - **Miriam (Miri)** je dcera Petra Vojtáska; je žena v domácnosti (žijící – na web nedávat).
 - Kdo je Petrův rodič z rodu Vojtásků, zatím neřečeno.
+
+## Co řekl uživatel – druhé doplnění (28. 10. 2026)
+- **Výchozí osoba rodokmenu je Petr Vojtásek**, vnuk Jana a Anastázie.
+- Petrův otec: **Otto Vojtásek**, * 21. 9. 1931, † 1984 ve Slavičíně.
+- Petrova matka: **Jindřiška, roz. Meislová**, * 24. 3. 1938 („…také ve Slavičíně“ – diktováno nejasně, upřesnit:
+  narozena / bydlela / zemřela ve Slavičíně? Žije?).
+- **Miriam, roz. Kovářová, je Petrova žena** (žijící). Dříve uvedeno „Miri je dcera Petra“ – upřesnit, jestli jde
+  o jednu osobu (manželku), nebo je i dcera Miri.
+- Jan a Anastázie se **narodili nejspíše v Rudimově**.
+- Uniforma na fotografii je **hasičská**. Jan byl podle rodiny zároveň **velitelem (šéfem) hasičů, hlavním kapelníkem
+  a starostou**; v diktátu ještě „největším vlakem“ – nesrozumitelné, upřesnit.

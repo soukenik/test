@@ -1,52 +1,30 @@
 # Rodokmen Vojtáskových z Rudimova
 
-Rodokmen rodiny Vojtáskových (s „s“ bez háčku) z Rudimova u Luhačovic, okres Zlín.
+Rodokmen Petra Vojtáska a jeho předků z Rudimova u Luhačovic (okres Zlín). Příjmení se píše
+Vojtásek / Vojtásková, s „s“ bez háčku.
 
-| Osoba | Vztah | Narození | Úmrtí | Poznámka |
-|---|---|---|---|---|
-| **Jan Vojtásek** | praděd | 31. 7. 1908 | 26. 6. 1982 | na fotografii v uniformě s vyznamenáními |
-| **Anastázie Vojtásková**, roz. Viceníková (?) | prababička | 16. 4. 1904 | 2. 12. 1976 | žena v domácnosti |
-| *syn (?) – doplnit* | dědeček | | | otec Petra |
-| **Petr Vojtásek** | otec | | | vnuk Jana a Anastázie |
-| **Miriam (Miri) Vojtásková** | | | | dcera Petra, žena v domácnosti |
+| # | Osoba | Vztah k Petrovi | Narození | Úmrtí | Poznámka |
+|---|---|---|---|---|---|
+| 1 | **Petr Vojtásek** | výchozí osoba | | | žijící |
+| – | **Miriam**, roz. Kovářová | manželka | | | žijící |
+| 2 | **Otto Vojtásek** | otec | 21. 9. 1931 | 1984, Slavičín | |
+| 3 | **Jindřiška**, roz. Meislová | matka | 24. 3. 1938 | | Slavičín – upřesnit |
+| 4 | **Jan Vojtásek** | dědeček | 31. 7. 1908, Rudimov (?) | 26. 6. 1982 | velitel hasičů, kapelník a starosta |
+| 5 | **Anastázie**, roz. Viceníková (?) | babička | 16. 4. 1904, Rudimov (?) | 2. 12. 1976 | žena v domácnosti |
 
-```
- Otec Jana ── Matka Jana        Otec Anastázie ── Matka Anastázie
-   (doplnit)    (doplnit)          (doplnit)          (doplnit)
-          │                                  │
-   Jan Vojtásek ─────────── ⚭ ─────────── Anastázie Vojtásková
-   * 31. 7. 1908                          roz. Viceníková (?)
-   † 26. 6. 1982                          * 16. 4. 1904
-                                          † 2. 12. 1976
-                                          žena v domácnosti
-                         │
-              syn (?) Vojtásek – doplnit
-                         │
-                   Petr Vojtásek
-                         │
-             Miriam (Miri) Vojtásková
-                 žena v domácnosti
-```
+## Jak je projekt uspořádaný
 
-## Projekt podle skillu `rodokmen`
+Projekt vede skill [rodokmen](https://github.com/sarsonj/rodokmen-skill) (verze 0.5.0, kopie v `.claude/skills/rodokmen/`).
+V každé relaci Claude Code nad tímto repozitářem se načte sám (nebo `/rodokmen`).
 
-Repozitář je založený skillem [rodokmen](https://github.com/sarsonj/rodokmen-skill) (verze 0.5.0, kopie v `.claude/skills/rodokmen/`).
-Data jsou v `data/` (osoby v `data/osoby.py`, stav práce v `data/STAV.md`), rodinný web v `web/`
-(`cd web && npm install && npm run data && npm run build`). Původní jednoduchý rodokmen zůstává v `rodokmen.html`.
+- `data/` – osoby (`data/osoby.py`), stav práce (`data/STAV.md`), údaje od rodiny, deník hledání, dotazy na archiv
+- `web/` – rodinný web (`cd web && npm install && npm run data && npm run build`)
+- `dokumenty/` – rodinné fotografie, zápis z rámu a `rodokmen.ged` (GEDCOM pro MyHeritage, FamilySearch, Geni)
+- `vyrezy/`, `zdroje/` – výřezy fotografií a matričních zápisů pro web
+- `tools/` – nástroje skillu (stahování z archivů, kontrola dat, výřezy)
 
-## Soubory
+## Hledání v matrikách
 
-- `rodokmen.html` – grafický rodokmen s fotografiemi (otevřete v prohlížeči)
-- `dokumenty/rodokmen.ged` – GEDCOM 5.5.1 pro import do MyHeritage, FamilySearch, Geni apod.
-- `dokumenty/` – původní fotografie a tužkou psaný zápis ze zadní strany rámu
-
-## K ověření a doplnění
-
-- **Rodič Petra:** jméno a data dítěte Jana a Anastázie. Podle příjmení to byl nejspíš syn.
-- **Příjmení:** rodina píše Vojtásek. Na rámu to vypadá spíš jako „Vojtášek“, proto v matrikách hledejte obě podoby.
-- **Rodné příjmení Anastázie** je špatně čitelné: Viceníková / Vicaníková / Vicenáková?
-- **Den úmrtí Anastázie:** 2. 12. nebo 7. 12. 1976.
-- **Zdroje:** matriky Rudimova jsou v Moravském zemském archivu v Brně, online na
-  [actapublica.eu](https://www.actapublica.eu/) (zdarma po registraci). Pro mladší
-  záznamy (sňatek, úmrtí) se obraťte na obecní úřad Rudimov. Řeknou vám, který
-  matriční úřad je příslušný.
+Rudimov patří pod Moravský zemský archiv v Brně (Acta Publica). Cloudová relace Claude Code na claude.ai má archivní
+portály ve výchozím nastavení sítě zablokované. Hledat v matrikách jde buď po povolení domén v nastavení prostředí,
+nebo v Claude Code na vlastním počítači.

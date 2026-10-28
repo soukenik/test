@@ -4,7 +4,8 @@ Tento soubor je vstupní bod. Po každém restartu (nová konverzace, zkrácený
 pak konec `research_log.md` a sekci „Rozpracováno“.
 
 ## Pro koho
-- Výchozí osoba: Miriam (Miri) Vojtásková – prozatímně, potvrdit s rodinou. Nejstarší známí předci: Jan Vojtásek (1908–1982) a Anastázie (1904–1976) z Rudimova u Luhačovic.
+- Výchozí osoba: Petr Vojtásek (žijící). Rodiče Otto Vojtásek (1931–1984, Slavičín) a Jindřiška roz. Meislová (* 1938);
+  prarodiče Jan Vojtásek (1908–1982) a Anastázie (1904–1976) z Rudimova u Luhačovic. Manželka Miriam roz. Kovářová.
 - Kdo s Claudem pracuje a jak chce komunikovat: člen rodiny, česky. Pracuje se v cloudové relaci Claude Code (claude.ai), repozitář soukenik/test.
 
 ## Kde co je
@@ -34,8 +35,14 @@ pak konec `research_log.md` a sekci „Rozpracováno“.
 6. Po změně dat spustím `python3 -I tools/kontrola.py`.
 
 ## Rozpracováno (aktualizovat průběžně)
-- Fáze 1 (rozhovor s rodinou): chybí rodiče Petra (dítě Jana a Anastázie), matka Miriam, roky narození, místa narození a sňatku Jana a Anastázie.
+- Fáze 1 (rozhovor s rodinou): upřesnit Jindřišku (Slavičín – narození/úmrtí? žije?), „největším vlakem“ u Jana,
+  zda je Miri dcera, nebo jen manželka Miriam; sňatek Jana a Anastázie, sňatek Otty a Jindřišky, čísla domů.
 - Fáze 2 (matriky): Rudimov spadá pod **MZA Brno (Acta Publica)** – pro skill bez nástroje, jen přes prohlížeč.
-  Z cloudové relace je portál zablokovaný sítí; potřeba povolit mza.cz v nastavení prostředí, nebo pracovat v Claude Code na vlastním počítači.
-  Začít matrikou narozených 1908 (Jan) a 1904 (Anastázie) ve farnosti, kam patřil Rudimov (farnost zjistit na portálu).
-- Původní jednoduchý rodokmen: `rodokmen.html` a `dokumenty/rodokmen.ged` (vytvořeno před založením projektu).
+  **Z cloudové relace jsou všechny archivní portály zablokované sítí** (proxy vrací 403 na www.mza.cz, actapublica.eu,
+  kramerius5.nkp.cz, ndk.cz, nominatim.openstreetmap.org…). Potřeba povolit domény v nastavení prostředí,
+  nebo pracovat v Claude Code na vlastním počítači.
+  Pořadí: narození Jana 1908 a Anastázie 1904 v Rudimově (farnost zjistit na portálu) → rodiče = další generace;
+  sňatek Jana a Anastázie asi 1928–1931 ve farnosti nevěsty (online, jen pokud je svazek uzavřen před ~1951).
+  Narození Otty 1931 a mladší údaje jsou na matričním úřadě (viz `archivni_dotazy.md`).
+- Noviny (Jan byl podle rodiny starosta, velitel hasičů a kapelník): Kramerius / NDK, hledat „Vojtásek Rudimov“, „Vojtášek Rudimov“.
+- `dokumenty/rodokmen.ged`: GEDCOM se stejnými údaji jako `osoby.py` – při změnách osob ho aktualizovat (nebo smazat).
