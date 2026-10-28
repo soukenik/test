@@ -43,7 +43,9 @@ pak konec `research_log.md` a sekci „Rozpracováno“.
   **Z cloudové relace jsou všechny archivní portály zablokované sítí** (proxy vrací 403 na www.mza.cz, actapublica.eu,
   kramerius5.nkp.cz, ndk.cz, nominatim.openstreetmap.org…). Potřeba povolit domény v nastavení prostředí,
   nebo pracovat v Claude Code na vlastním počítači.
-  Pořadí: narození Jana 1908 a Anastázie 1904 v Rudimově (farnost zjistit na portálu) → rodiče = další generace;
+  Farnost: **Slavičín** (Rudimov do ní patří). Na Acta Publica je „ŘKFÚ Slavičín, matrika zemřelých pro Rudimov 1878–1949“
+  (inv. č. 4645) – kandidát na úmrtí Janových a Anastáziiných rodičů; svazek narozených pro Rudimov najít na portálu.
+  Pořadí: narození Jana 1908 a Anastázie 1904 v Rudimově (ŘKFÚ Slavičín) → rodiče = další generace;
   sňatek Jana a Anastázie asi 1928–1931 ve farnosti nevěsty (online, jen pokud je svazek uzavřen před ~1951).
   Narození Otty 1931 a mladší údaje jsou na matričním úřadě (viz `archivni_dotazy.md`).
 - Noviny (Jan byl podle rodiny starosta, velitel hasičů a kapelník): Kramerius / NDK, hledat „Vojtásek Rudimov“, „Vojtášek Rudimov“.

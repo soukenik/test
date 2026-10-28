@@ -11,3 +11,5 @@ Co by šlo zjistit jen v badatelně archivu nebo na matričním úřadě (a pro�
 - **Jan jako „kulak“ (po 1948)** – SOkA Zlín: fondy MNV Rudimov (zápisy rady, seznamy „vesnických boháčů“, povinné dodávky) a JZD Rudimov;
   případně Archiv bezpečnostních složek (abscr.cz), pokud byl Jan nebo rodina vyšetřováni či postiženi (akce K, vystěhování).
 - **Narození a úmrtí Jindřišky Vojtáskové, roz. Meislové** – matriční úřad Slavičín (narození 1938 mladší 100 let).
+- **Pozor na místo úmrtí „Slavičín“ (Otto 1984):** Rudimov byl před rokem 1992 součástí Slavičína, takže „zemřel ve Slavičíně“ může znamenat i Rudimov. Matriční úřad je v obou případech Slavičín.
+- **Seznam starostů Rudimova a historie hasičů (SDH od 1907)** – obecní kronika Rudimova (SOkA Zlín), obecní úřad Rudimov 123, případně SDH Rudimov.
