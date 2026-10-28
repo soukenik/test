@@ -1,0 +1,71 @@
+<!doctype html>
+<!-- Šablona přihlašovací stránky. Vyplňuje ji tools/export_web.py z data/web.json do public/prihlaseni.html. -->
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Přihlášení · {{NAZEV}}</title>
+  <style>
+    :root { --bg: #fbf8f2; --ink: #2b2620; --muted: #6e6153; --line: #e4ddd1; --accent: #8a5a2b; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--ink);
+      font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; padding: 16px; }
+    main { width: 100%; max-width: 440px; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 28px 24px; }
+    h1 { font: 400 1.7rem Georgia, 'Times New Roman', serif; color: #3b2e22; margin: 0 0 0.4rem; }
+    p { margin: 0.5rem 0; color: var(--muted); }
+    label { display: block; margin: 1.2rem 0 0.4rem; font-weight: 600; color: var(--ink); }
+    input { width: 100%; font: inherit; padding: 0.6rem 0.75rem; border: 1px solid #cfc5b6; border-radius: 8px; }
+    input:focus { outline: 2px solid #efb45f; border-color: #efb45f; }
+    button { margin-top: 0.9rem; width: 100%; font: inherit; font-weight: 600; padding: 0.65rem; border: 0; border-radius: 8px;
+      background: #3b2e22; color: #fbf3e6; cursor: pointer; }
+    button:hover { background: #5a4632; }
+    .err { color: #b3261e; min-height: 1.4em; margin-top: 0.6rem; }
+    .small { font-size: 0.88rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{NAZEV}}</h1>
+    <p>{{UVOD}}</p>
+    <form id="f">
+      <label for="a">{{OTAZKA}}</label>
+      <input id="a" name="a" autocomplete="off" autofocus required />
+      <button type="submit">Vstoupit</button>
+      <p class="err" id="err" role="alert"></p>
+    </form>
+    <p class="small">{{NAPOVEDA}}</p>
+  </main>
+  <script>
+    if (new URLSearchParams(location.search).has('spatne')) {
+      document.getElementById('err').textContent = 'To není ono – zkuste to znovu.';
+    }
+    document.getElementById('f').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v = document.getElementById('a').value.normalize('NFD').replace(/[̀-ͯ]/g, '')
+        .toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!window.crypto || !crypto.subtle) {   // jen přes https (nebo localhost)
+        document.getElementById('err').textContent = 'Přihlášení funguje jen přes zabezpečené spojení (https).';
+        return;
+      }
+      // Do cookie jde jen otisk odpovědi (SHA-256), ne odpověď samotná – stejný otisk má server.
+      crypto.subtle.digest('SHA-256', new TextEncoder().encode('rodokmen:' + v)).then(function (buf) {
+        var hash = Array.from(new Uint8Array(buf)).map(function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+        var secure = location.protocol === 'https:' ? '; Secure' : '';
+        document.cookie = 'rodokmen=' + hash + '; Max-Age=31536000; Path=/; SameSite=Lax' + secure;
+        // úvodní lomítka sloučit: z adresy „https://web//cizi.web“ by jinak „//cizi.web“ přesměrovalo na cizí web
+        var path = location.pathname.replace(/^[\/\\]+/, '/');
+        var back = path === '/prihlaseni.html' ? '/' : path + location.search;
+        return fetch(back, { credentials: 'same-origin', cache: 'no-store' }).then(function (r) {
+          if (r.status === 401) {
+            document.getElementById('err').textContent = 'To není ono – zkuste to znovu.';
+          } else {
+            location.replace(back);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

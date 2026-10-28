@@ -1,0 +1,86 @@
+---
+import Base from '../layouts/Base.astro';
+import { stats, lines, href, config, linesTitle } from '../lib/data.js';
+import fan from '../generated/fan.svg?raw';
+import MobileTree from '../components/MobileTree.astro';
+import FamilyMap from '../components/FamilyMap.astro';
+import site from '../data/site.json';
+import { frontmatter as pribeh } from '../generated/pribeh.md';
+const lineList = Object.values(lines).sort((a, b) => a.k - b.k);
+const uvod = config.uvod ?? {};
+const cards = config.zajimavosti_na_uvodu ?? [];
+---
+<Base title="" wide>
+  <h1>{config.nazev || 'Rodokmen'}</h1>
+
+  {(uvod.nadpis || uvod.odstavce?.length) && (
+    <section class="teaser">
+      <div>
+        {uvod.nadpis && <h2>{uvod.nadpis}</h2>}
+        {(uvod.odstavce ?? []).map((t) => <p>{t}</p>)}
+        {config.maPribeh && <a class="btn" href="/pribehy/">{config.pribeh?.tlacitko || `Přečíst: ${pribeh.title}`} →</a>}
+      </div>
+      {uvod.foto && (
+        <a href={config.maPribeh ? '/pribehy/' : `/img/${uvod.foto}.jpg`}><img src={`/img/${uvod.foto}.jpg`} alt={uvod.foto_popis || ''} /></a>
+      )}
+    </section>
+  )}
+
+  {config.maPribeh && !(uvod.nadpis || uvod.odstavce?.length) && (
+    <section class="teaser">
+      <div>
+        <h2>{pribeh.title}</h2>
+        {pribeh.lead && <p>{pribeh.lead}</p>}
+        <a class="btn" href="/pribehy/">{config.pribeh?.tlacitko || 'Přečíst příběh'} →</a>
+      </div>
+    </section>
+  )}
+
+  <div class="stats">
+    <div><strong>{stats.ancestors}</strong>známých předků</div>
+    <div><strong>{stats.documented}</strong>doloženo matrikou</div>
+    <div><strong>{stats.generations}</strong>generací</div>
+    <div><strong>{stats.records}</strong>matričních zápisů</div>
+  </div>
+
+  {cards.length > 0 && (
+    <>
+      <h2>Zajímavosti</h2>
+      <div class="grid2">
+        {cards.map((c) => (
+          <a class="card card-link" href="/zajimavosti/"><h3>{c.nadpis}</h3><p class="small muted">{c.text}</p></a>
+        ))}
+      </div>
+      <p><a href="/zajimavosti/">Všechny zajímavosti →</a></p>
+    </>
+  )}
+
+  {site.places.length > 0 && (
+    <>
+      <h2>Kde žili naši předci</h2>
+      <FamilyMap height="420px" compact />
+      <p><a href="/mapa/">Celá mapa se jmény a filtrem rodů →</a></p>
+    </>
+  )}
+
+  {lineList.length > 0 && (
+    <>
+      <h2>{linesTitle(lineList.length)}</h2>
+      <div class="grid2">
+        {lineList.map((l) => (
+          <a class="card line-card card-link" style={`--c:${l.color}`} href={href.line(l.slug)}>
+            <h3>{l.name}</h3>
+            <p class="small muted">{l.desc}</p>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  <h2>Rodokmen</h2>
+  <div class="only-mobile">
+    <MobileTree k={1} />
+  </div>
+  <div class="fan-preview only-desktop"><a class="cover" href="/vejir/" aria-label="Otevřít vějíř předků přes celou obrazovku"></a><Fragment set:html={fan} /></div>
+  <p><a class="btn" href="/vejir/">Otevřít vějíř předků přes celou obrazovku →</a> <a href="/predci/" style="margin-left:1rem">nebo seznam všech předků</a></p>
+</Base>

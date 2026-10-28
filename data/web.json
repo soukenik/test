@@ -1,0 +1,19 @@
+{
+ "nazev": "Rodokmen Vojtáskových",
+ "popis": "Rod Vojtásků z Rudimova u Luhačovic",
+ "zapati": "Dohledáno v digitalizovaných matrikách státních oblastních archivů",
+ "kontakt": {"jmeno": "", "email": ""},
+ "prihlaseni": {
+  "uvod": "Tenhle web je jen pro rodinu a příbuzné.",
+  "otazka": "",
+  "odpoved": ""
+ },
+ "uvod": {
+  "nadpis": "Vojtáskovi z Rudimova",
+  "odstavce": ["Jan Vojtásek (1908–1982) a jeho žena Anastázie (1904–1976) žili v Rudimově u Luhačovic. Odtud začínáme pátrat po dalších generacích."],
+  "foto": "foto_jan_a_anastazie",
+  "foto_popis": "Jan a Anastázie Vojtáskovi"
+ },
+ "pribeh": {"menu": "", "rod": 8, "tlacitko": ""},
+ "zajimavosti_na_uvodu": []
+}

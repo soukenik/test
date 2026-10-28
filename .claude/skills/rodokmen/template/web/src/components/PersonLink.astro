@@ -1,0 +1,10 @@
+---
+import { people, href } from '../lib/data.js';
+const { slug, showYears = true } = Astro.props;
+const p = slug ? people[slug] : null;
+---
+{p ? (
+  <a class={`person-link ${p.st}`} href={href.person(p.slug)}><span class="nm">{p.name}</span>{showYears && p.years && <span class="yrs">{p.years}</span>}</a>
+) : (
+  <span class="muted">neznámý</span>
+)}

@@ -1,0 +1,11 @@
+# konce řádků LF i na Windows (Git for Windows má core.autocrlf=true: skripty .sh by v Git Bash nešly spustit
+# a přepsané datové soubory by v historii vypadaly jako celé změněné)
+*.sh   text eol=lf
+*.py   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.mjs  text eol=lf
+*.astro text eol=lf
+*.jpg  binary
+*.png  binary
+*.pdf  binary

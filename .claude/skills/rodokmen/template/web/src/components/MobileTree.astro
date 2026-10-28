@@ -1,0 +1,35 @@
+---
+// Phone-friendly pedigree: parents, grandparents and great-grandparents of person k as stacked two-column grids.
+import { byK, lineByK, href } from '../lib/data.js';
+const { k } = Astro.props;
+const levels = [
+  ['Rodiče', 2],
+  ['Prarodiče', 4],
+  ['Praprarodiče', 8],
+];
+const depth = (kk) => (byK[2 * kk] || byK[2 * kk + 1] ? 1 + Math.max(depth(2 * kk), depth(2 * kk + 1)) : 0);
+const genWord = (n) => (n < 5 ? 'generace' : 'generací');
+---
+<div class="mtree">
+  {levels.map(([label, n], li) => (
+    <section>
+      <h3>{label}</h3>
+      <div class="mtree-grid">
+        {Array.from({ length: n }, (_, i) => {
+          const kk = k * n + i;
+          const p = byK[kk];
+          const line = p?.line ? lineByK[p.line] : null;
+          const more = li === levels.length - 1 && p ? depth(kk) : 0;
+          return p ? (
+            <a class="mbox" href={href.person(p.slug)} style={line ? `border-left-color:${line.color}` : undefined}>
+              <strong>{p.name}</strong><span>{p.years}</span>
+              {more > 0 && <span class="more">a dál {more} {genWord(more)} →</span>}
+            </a>
+          ) : (
+            <span class="mbox empty">?</span>
+          );
+        })}
+      </div>
+    </section>
+  ))}
+</div>

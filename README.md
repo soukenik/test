@@ -28,11 +28,17 @@ Rodokmen rodiny Vojtáskových (s „s“ bez háčku) z Rudimova u Luhačovic, 
                  žena v domácnosti
 ```
 
+## Projekt podle skillu `rodokmen`
+
+Repozitář je založený skillem [rodokmen](https://github.com/sarsonj/rodokmen-skill) (verze 0.5.0, kopie v `.claude/skills/rodokmen/`).
+Data jsou v `data/` (osoby v `data/osoby.py`, stav práce v `data/STAV.md`), rodinný web v `web/`
+(`cd web && npm install && npm run data && npm run build`). Původní jednoduchý rodokmen zůstává v `rodokmen.html`.
+
 ## Soubory
 
 - `rodokmen.html` – grafický rodokmen s fotografiemi (otevřete v prohlížeči)
-- `rodokmen.ged` – GEDCOM 5.5.1 pro import do MyHeritage, FamilySearch, Geni apod.
-- `foto/` – původní fotografie a tužkou psaný zápis ze zadní strany rámu
+- `dokumenty/rodokmen.ged` – GEDCOM 5.5.1 pro import do MyHeritage, FamilySearch, Geni apod.
+- `dokumenty/` – původní fotografie a tužkou psaný zápis ze zadní strany rámu
 
 ## K ověření a doplnění
 

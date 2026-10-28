@@ -1,0 +1,39 @@
+---
+import { records, href } from '../lib/data.js';
+import PersonLink from './PersonLink.astro';
+const { id, showPeople = false, exclude, open = false } = Astro.props;
+const r = records[id];
+---
+{r && (
+  <article class="rec">
+    <div>
+      <div class="meta"><span class="kind">{r.kindName}</span>{r.date} · {r.archive && r.volume ? r.volume : r.vdesc} · snímek {r.scan}</div>
+      <div class="title"><a href={href.record(r.key)}>{r.title}</a></div>
+      <div class="small">{r.summary}</div>
+      {showPeople && r.people.filter((s) => s !== exclude).length > 0 && (
+        <div class="small muted">Týká se: {r.people.filter((s) => s !== exclude).map((s, i) => <>{i > 0 && ', '}<PersonLink slug={s} /></>)}</div>
+      )}
+    </div>
+    {r.img && (
+      <a class="scan" href={r.full ? `/zdroje/${r.key}.jpg` : `/img/${r.key}.jpg`} target="_blank" rel="noopener">
+        <span class="hl-wrap">
+          <img src={`/img/${r.key}.jpg`} alt={`Výřez zápisu: ${r.title}`} loading="lazy" />
+          {r.boxes.map(([x0, y0, x1, y1]) => <span class="hl" style={`left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%`}></span>)}
+        </span>
+      </a>
+    )}
+    {r.orig && (
+      <details class="transcript" open={open}>
+        <summary>Text z matriky a překlad</summary>
+        <div class="tr-grid">
+          <div><h4>Přepis originálu</h4><p class="tr-orig">{r.orig}</p></div>
+          <div><h4>Překlad</h4><p class="tr-cs">{r.cs}</p></div>
+        </div>
+      </details>
+    )}
+    <div class="links">
+      {r.full && <a href={`/zdroje/${r.key}.jpg`} target="_blank" rel="noopener">Plné rozlišení</a>}
+      {r.url && <a href={r.url} target="_blank" rel="noopener">Snímek na portálu {r.portal}</a>}
+    </div>
+  </article>
+)}

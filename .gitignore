@@ -1,0 +1,19 @@
+# pracovní soubory a stažené stránky (nejdou na web ani do historie)
+pracovni/
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tar.gz
+# web – závislosti, build a vše, co generuje `npm run data`
+web/node_modules/
+web/dist/
+web/.astro/
+web/.netlify/
+web/src/data/site.json
+web/src/generated/
+web/public/img/
+web/public/zdroje/
+web/public/prihlaseni.html
+web/nginx.conf
+web/netlify/edge-functions/

@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import PersonLink from '../../components/PersonLink.astro';
+import Record from '../../components/Record.astro';
+import Pedigree from '../../components/Pedigree.astro';
+import MobileTree from '../../components/MobileTree.astro';
+import { people, families, lineByK, records, dateKey, href, statusClass } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return Object.keys(people).map((slug) => ({ params: { slug } }));
+}
+const p = people[Astro.params.slug];
+const line = p.line ? lineByK[p.line] : null;
+const recs = [...new Set(p.records)].filter((r) => records[r]).sort((a, b) => dateKey(records[a].date) - dateKey(records[b].date));
+const path = [...p.path].reverse().filter(Boolean);
+---
+<Base title={p.name} description={`${p.name} ${p.years} – ${p.rel}`}>
+  <div class="crumbs">
+    {path.map((s, i) => <>{i > 0 && <span>→</span>}{s === p.slug ? <span>{people[s].name}</span> : <a href={href.person(s)}>{people[s].name.split(' ')[0]} {people[s].years}</a>}</>)}
+  </div>
+  <h1>{p.name}</h1>
+  <div class="chips">
+    {p.years && <span class="chip">{p.years}</span>}
+    <span class="chip">{p.rel}</span>
+    {line && <a class="chip" href={href.line(line.slug)}><span class="dot" style={`background:${line.color}`}></span>rod {line.name}</a>}
+    <span class={`chip ${statusClass(p.st)}`}>{p.status}</span>
+  </div>
+
+  {p.also.length > 0 && (
+    <p class="note">V rodokmenu dvakrát – pedigree collapse: je předkem přes {p.children.map((c, i) => <>{i > 0 && ' i přes '}<PersonLink slug={c} /></>)}.
+      Podruhé jako {p.also.map((a) => a.rel).join(', ')}.</p>
+  )}
+  {p.facts.length > 0 && <ul class="facts">{p.facts.map((f) => <li>{f}</li>)}</ul>}
+  {p.note && <p class="note">{p.note}</p>}
+
+  <h2>Rodina</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Rodiče</h3>
+      <p>Otec: {p.father ? <PersonLink slug={p.father} /> : <span class="muted">{p.fatherUnknown ? 'neuveden (nemanželské dítě)' : 'zatím neznámý'}</span>}<br />
+        Matka: {p.mother ? <PersonLink slug={p.mother} /> : <span class="muted">zatím neznámá</span>}</p>
+      {p.family && <p class="small"><a href={href.family(p.family)}>Rodina, ze které pochází →</a></p>}
+    </div>
+    {p.child && (
+      <div class="card">
+        <h3>{p.sex === 'M' ? 'Manželka' : 'Manžel'} a dítě v linii</h3>
+        <p>{p.spouse ? <PersonLink slug={p.spouse} /> : <span class="muted">{p.sex === 'F' && people[p.child]?.fatherUnknown ? 'otec dítěte neuveden' : 'neznámý partner'}</span>}<br />
+          {p.children.length > 1 ? 'Děti' : 'Dítě'}: {p.children.map((c, i) => <>{i > 0 && ', '}<PersonLink slug={c} /></>)}</p>
+        {p.ownFamily && <p class="small"><a href={href.family(p.ownFamily)}>Jejich rodina →</a></p>}
+      </div>
+    )}
+  </div>
+
+  {p.side.length > 0 && (
+    <>
+      <h2>Příbuzní mimo přímou linii</h2>
+      <div class="grid2">
+        {p.side.map((s) => (
+          <div class="card"><h3>{s.name}</h3><p class="small">{s.text}</p>
+            {s.records.length > 0 && <p class="small">Zápisy: {s.records.filter((r) => records[r]).map((r, i) => <>{i > 0 && ' · '}<a href={href.record(r)}>{records[r].date}</a></>)}</p>}
+          </div>
+        ))}
+      </div>
+    </>
+  )}
+
+  <h2>Předci</h2>
+  <div class="only-desktop"><Pedigree k={p.k} /></div>
+  <div class="only-mobile"><MobileTree k={p.k} /></div>
+
+  {p.docs.length > 0 && (
+    <>
+      <h2>Rodinné dokumenty</h2>
+      <div class="docs">{p.docs.map((d) => <figure><a href={`/img/${d.img}.jpg`} target="_blank" rel="noopener"><img src={`/img/${d.img}.jpg`} alt={d.caption} loading="lazy" /></a><figcaption>{d.caption}</figcaption></figure>)}</div>
+    </>
+  )}
+
+  <h2>Zápisy z matrik</h2>
+  {recs.length ? <div class="recs">{recs.map((r) => <Record id={r} showPeople exclude={p.slug} />)}</div>
+    : <p class="muted">K této osobě zatím nemáme vlastní matriční zápis – údaje pocházejí ze zápisů jejích dětí{p.st === 'fam' ? ' nebo od rodiny' : ''}.</p>}
+</Base>

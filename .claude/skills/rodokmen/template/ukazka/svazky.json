@@ -1,0 +1,317 @@
+{
+ "ukazka01": {
+  "archiv": "Státní oblastní archiv v Hradci Králové",
+  "portal": "ARON",
+  "svazek": "N Holice 1880–1900 (UKÁZKA)",
+  "popis": "vymyšlený svazek pro ukázku",
+  "url": "https://aron.vychodoceskearchivy.cz/"
+ },
+ "ukazka02": {
+  "archiv": "Státní oblastní archiv v Hradci Králové",
+  "portal": "ARON",
+  "svazek": "O Holice 1900–1925 (UKÁZKA)",
+  "popis": "vymyšlený svazek pro ukázku",
+  "url": "https://aron.vychodoceskearchivy.cz/"
+ },
+ "ukazka_holice_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Holice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_horni_roven_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Horní Roveň (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_ostretin_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Ostřetín (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_uhersko_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Uhersko (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_hlinsko_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Hlinsko (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_nasavrky_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Nasavrky (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_chrudim_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Chrudim (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_skutec_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Skuteč (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_dolni_roven_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Dolní Roveň (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_dasice_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Dašice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_vysoke_chvojno_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Vysoké Chvojno (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_chocen_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Choceň (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_vysoke_myto_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Vysoké Mýto (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_hermanuv_mestec_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Heřmanův Městec (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_tremosnice_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Třemošnice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_luze_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Luže (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_byst_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Býšť (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_moravany_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Moravany (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_sezemice_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Sezemice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_prosec_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Proseč (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_policka_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Polička (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_horni_redice_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Horní Ředice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_zamrsk_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Zámrsk (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_litomysl_o": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Oddaní Litomyšl (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_holice_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Holice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_chrudim_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Chrudim (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_ostretin_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Ostřetín (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_skutec_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Skuteč (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_luze_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Luže (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_dolni_roven_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Dolní Roveň (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_moravany_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Moravany (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_sezemice_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Sezemice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_dasice_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Dašice (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_chocen_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Choceň (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_nasavrky_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Nasavrky (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_hermanuv_mestec_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Heřmanův Městec (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_prosec_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Proseč (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_vysoke_myto_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Vysoké Mýto (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_zamrsk_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Zámrsk (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_uhersko_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Uhersko (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_hlinsko_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Hlinsko (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_litomysl_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Litomyšl (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ },
+ "ukazka_policka_z": {
+  "archiv": "SOA Zámrsk (ukázka – vymyšlené)",
+  "portal": "aron.vychodoceskearchivy.cz",
+  "svazek": "Zemřelí Polička (ukázka)",
+  "popis": "Vymyšlený svazek pro ukázkový web.",
+  "url": ""
+ }
+}

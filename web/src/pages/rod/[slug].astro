@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import PersonLink from '../../components/PersonLink.astro';
+import Record from '../../components/Record.astro';
+import { lines, people, hypotheses, href, genName, statusClass, lineByK } from '../../lib/data.js';
+
+export function getStaticPaths() {
+  return Object.keys(lines).map((slug) => ({ params: { slug } }));
+}
+const l = lines[Astro.params.slug];
+const members = l.people.map((s) => ({ ...people[s], gen: l.gens[s] }));
+const gens = [...new Set(members.map((p) => p.gen))].sort((a, b) => a - b);
+const partnerLine = lineByK[l.k ^ 1];
+---
+<Base title={`Rod ${l.name}`}>
+  <p class="crumbs"><a href="/rody/">Rody</a></p>
+  <h1><span style={`display:inline-block;width:.8em;height:.8em;border-radius:50%;background:${l.color};margin-right:.3em`}></span>{l.name}</h1>
+  <p class="lead">{l.desc}</p>
+  <p>Rod začíná u <PersonLink slug={l.root} /> ({people[l.root].rel}).
+    {partnerLine && people[l.root].spouse && (
+      <>{people[l.root].sex === 'M' ? ' Jeho manželka ' : ' Její manžel '}<PersonLink slug={people[l.root].spouse} /> je výchozí osobou
+        sousedního rodu <a href={href.line(partnerLine.slug)}>{partnerLine.name}</a>; jejich {people[people[l.root].child].sex === 'M' ? 'syn' : 'dcera'} <PersonLink slug={people[l.root].child} />.</>
+    )}
+  </p>
+  <p class="small muted">Rodokmen je rozdělený do osmi rodů podle osmi pradědečků a prababiček – každý manželský pár proto patří do dvou sousedních rodů.</p>
+
+  {gens.map((g) => (
+    <>
+      <h2>{genName(g)}</h2>
+      <div class="table-box"><table>
+        <thead><tr><th>Jméno</th><th>Život</th><th>Údaje</th><th>Stav</th></tr></thead>
+        <tbody>
+          {members.filter((p) => p.gen === g).map((p) => (
+            <tr>
+              <td><PersonLink slug={p.slug} showYears={false} /></td>
+              <td class="small">{p.years}</td>
+              <td class="small">{p.facts.slice(0, 2).join(' · ')}</td>
+              <td><span class={`chip ${statusClass(p.st)}`}>{p.status}</span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table></div>
+    </>
+  ))}
+
+  {hypotheses.filter((h) => h.line === l.k).map((h) => (
+    <>
+      <h2>{h.title}</h2>
+      {h.text && <p class="prose">{h.text}</p>}
+      {h.items.length > 0 && <ul class="facts">{h.items.map((o) => <li><strong>{o.name}</strong> – {o.text}</li>)}</ul>}
+      <div class="recs">{h.records.map((r) => <Record id={r} />)}</div>
+    </>
+  ))}
+</Base>

@@ -1,0 +1,184 @@
+{
+ "Holice": {
+  "re": "Holic",
+  "dotaz": "Holice, Česko",
+  "lat": 50.0663,
+  "lon": 15.9859,
+  "osm": "Holice, okres Pardubice, Pardubický kraj, 534 01, Česko"
+ },
+ "Dolní Roveň": {
+  "re": "Dolní Rov",
+  "dotaz": "Dolní Roveň, Česko",
+  "lat": 50.0293,
+  "lon": 15.9677,
+  "osm": "Dolní Roveň, okres Pardubice, Pardubický kraj, 533 71, Česko"
+ },
+ "Horní Roveň": {
+  "re": "Horní Rov",
+  "dotaz": "Horní Roveň, Česko",
+  "lat": 50.0257,
+  "lon": 15.9956,
+  "osm": "Horní Roveň, Dolní Roveň, okres Pardubice, Pardubický kraj, 533 71, Česko"
+ },
+ "Ostřetín": {
+  "re": "Ostřetín",
+  "dotaz": "Ostřetín, Česko",
+  "lat": 50.0447,
+  "lon": 16.0303,
+  "osm": "Ostřetín, okres Pardubice, Pardubický kraj, Česko"
+ },
+ "Horní Ředice": {
+  "re": "Ředic",
+  "dotaz": "Horní Ředice, Česko",
+  "lat": 50.0773,
+  "lon": 15.9555,
+  "osm": "Horní Ředice, okres Pardubice, Pardubický kraj, Česko"
+ },
+ "Býšť": {
+  "re": "Býšť|Býšti",
+  "dotaz": "Býšť, Česko",
+  "lat": 50.1324,
+  "lon": 15.911,
+  "osm": "Býšť, okres Pardubice, Pardubický kraj, 533 22, Česko"
+ },
+ "Sezemice": {
+  "re": "Sezemic",
+  "dotaz": "Sezemice, okres Pardubice, Česko",
+  "lat": 50.0665,
+  "lon": 15.8527,
+  "osm": "Sezemice, okres Mladá Boleslav, Středočeský kraj, Česko"
+ },
+ "Moravany": {
+  "re": "Moravan",
+  "dotaz": "Moravany, okres Pardubice, Česko",
+  "lat": 49.9997,
+  "lon": 15.9405,
+  "osm": "Moravany, okres Brno-venkov, Jihomoravský kraj, 664 48, Česko"
+ },
+ "Vysoké Chvojno": {
+  "re": "Chvojn",
+  "dotaz": "Vysoké Chvojno, Česko",
+  "lat": 50.109,
+  "lon": 15.9735,
+  "osm": "Vysoké Chvojno, okres Pardubice, Pardubický kraj, 533 21, Česko"
+ },
+ "Dašice": {
+  "re": "Dašic",
+  "dotaz": "Dašice, Česko",
+  "lat": 50.0284,
+  "lon": 15.9124,
+  "osm": "Dašice, okres Pardubice, Pardubický kraj, 533 03, Česko"
+ },
+ "Vysoké Mýto": {
+  "re": "Vysoké Mýt|Vysokém Mýt",
+  "dotaz": "Vysoké Mýto, Česko",
+  "lat": 49.9535,
+  "lon": 16.1616,
+  "osm": "Vysoké Mýto, okres Ústí nad Orlicí, Pardubický kraj, 566 01, Česko"
+ },
+ "Choceň": {
+  "re": "Choce[ňn]",
+  "dotaz": "Choceň, Česko",
+  "lat": 50.0011,
+  "lon": 16.224,
+  "osm": "Choceň, okres Ústí nad Orlicí, Pardubický kraj, Česko"
+ },
+ "Zámrsk": {
+  "re": "Zámrsk",
+  "dotaz": "Zámrsk, Česko",
+  "lat": 49.9862,
+  "lon": 16.1287,
+  "osm": "Zámrsk, okres Ústí nad Orlicí, Pardubický kraj, 565 43, Česko"
+ },
+ "Uhersko": {
+  "re": "Uhersk",
+  "dotaz": "Uhersko, Česko",
+  "lat": 49.9925,
+  "lon": 16.0177,
+  "osm": "Uhersko, okres Pardubice, Pardubický kraj, 533 73, Česko"
+ },
+ "Chrudim": {
+  "re": "Chrudim",
+  "dotaz": "Chrudim, Česko",
+  "lat": 49.9511,
+  "lon": 15.7948,
+  "osm": "Chrudim, okres Chrudim, Pardubický kraj, Česko"
+ },
+ "Hlinsko": {
+  "re": "Hlinsk",
+  "dotaz": "Hlinsko, Česko",
+  "lat": 49.7626,
+  "lon": 15.9073,
+  "osm": "Hlinsko, okres Chrudim, Pardubický kraj, Česko"
+ },
+ "Nasavrky": {
+  "re": "Nasavr",
+  "dotaz": "Nasavrky, okres Chrudim, Česko",
+  "lat": 49.8443,
+  "lon": 15.8048,
+  "osm": "Nasavrky, okres Tábor, Jihočeský kraj, Jihozápad, Česko"
+ },
+ "Heřmanův Městec": {
+  "re": "Heřmanův|Heřmanově",
+  "dotaz": "Heřmanův Městec, Česko",
+  "lat": 49.947,
+  "lon": 15.6647,
+  "osm": "Heřmanův Městec, okres Chrudim, Pardubický kraj, Česko"
+ },
+ "Slatiňany": {
+  "re": "Slatiň",
+  "dotaz": "Slatiňany, Česko",
+  "lat": 49.9212,
+  "lon": 15.8133,
+  "osm": "Slatiňany, okres Chrudim, Pardubický kraj, 538 21, Česko"
+ },
+ "Třemošnice": {
+  "re": "Třemošnic",
+  "dotaz": "Třemošnice, Česko",
+  "lat": 49.8693,
+  "lon": 15.5804,
+  "osm": "Třemošnice, okres Chrudim, Pardubický kraj, 538 43, Česko"
+ },
+ "Skuteč": {
+  "re": "Skuteč",
+  "dotaz": "Skuteč, Česko",
+  "lat": 49.8434,
+  "lon": 15.9962,
+  "osm": "Skuteč, okres Chrudim, Pardubický kraj, 539 73, Česko"
+ },
+ "Proseč": {
+  "re": "Proseč",
+  "dotaz": "Proseč, okres Chrudim, Česko",
+  "lat": 49.8058,
+  "lon": 16.1163,
+  "osm": "Proseč, okres Pelhřimov, Kraj Vysočina, Česko"
+ },
+ "Luže": {
+  "re": "Luž[ei]",
+  "dotaz": "Luže, Česko",
+  "lat": 49.8934,
+  "lon": 16.0284,
+  "osm": "Luže, okres Chrudim, Pardubický kraj, 538 54, Česko"
+ },
+ "Litomyšl": {
+  "re": "Litomyšl",
+  "dotaz": "Litomyšl, Česko",
+  "lat": 49.8725,
+  "lon": 16.3101,
+  "osm": "Litomyšl, okres Svitavy, Pardubický kraj, 570 14, Česko"
+ },
+ "Polička": {
+  "re": "Poli[čc]k",
+  "dotaz": "Polička, Česko",
+  "lat": 49.7149,
+  "lon": 16.2654,
+  "osm": "Polička, okres Svitavy, Pardubický kraj, Česko"
+ },
+ "Pardubice": {
+  "re": "Pardubic",
+  "dotaz": "Pardubice, Česko",
+  "lat": 50.0386,
+  "lon": 15.7791,
+  "osm": "Pardubice, okres Pardubice, Pardubický kraj, Česko"
+ }
+}

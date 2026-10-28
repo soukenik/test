@@ -1,0 +1,8 @@
+# Nasazení na Netlify: `npm run nasadit` (viz reference/web.md ve skillu).
+[build]
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

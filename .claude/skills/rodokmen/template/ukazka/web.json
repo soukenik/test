@@ -1,0 +1,45 @@
+{
+ "nazev": "Rodokmen Novákových",
+ "popis": "Rodokmen rodu Nováků a sedmi příbuzných rodů z Pardubicka a Chrudimska, dohledaný v matrikách. (Ukázka – vymyšlená rodina.)",
+ "zapati": "Dohledáno v digitalizovaných matrikách státních oblastních archivů",
+ "kontakt": {
+  "jmeno": "Petrovi",
+  "email": ""
+ },
+ "prihlaseni": {
+  "uvod": "Tenhle web je jen pro rodinu a příbuzné.",
+  "otazka": "Jaké řemeslo měli Novákové z Holic? (ukázka – odpověď: kovář)",
+  "odpoved": "kovář"
+ },
+ "uvod": {
+  "nadpis": "Kováři z Holic a jejich 260 předků",
+  "odstavce": [
+   "V roce 1786 se mladý kovář Václav Novák z Ostřetína přiženil na kovárnu v Holicích čp. 112. Jeho potomci v ní kuli koně dalších 158 let, pět generací za sebou.",
+   "Kromě Nováků tu najdete mlynáře ze Slatiňan, soukeníky z Vysokého Mýta i hrnčíře z Luže. Je tu jedenáct generací až ke kováři Jakubovi, narozenému kolem roku 1665. Každý údaj má odkaz na původní zápis v matrice."
+  ],
+  "foto": "",
+  "foto_popis": ""
+ },
+ "pribeh": {
+  "menu": "Příběh Nováků",
+  "rod": 8
+ },
+ "zajimavosti_na_uvodu": [
+  {
+   "nadpis": "158 let v jedné kovárně",
+   "text": "Pět generací Nováků v Holicích čp. 112, od roku 1786 do roku 1944."
+  },
+  {
+   "nadpis": "Mlýn přes pět generací",
+   "text": "Kučerovi mleli ve Slatiňanech čp. 5 nejméně od roku 1773."
+  },
+  {
+   "nadpis": "Prababička, které bylo 94",
+   "text": "Karolína Kubátová z Luže zažila Rakousko-Uhersko, obě světové války i konec té druhé."
+  },
+  {
+   "nadpis": "Svatba na poslední chvíli",
+   "text": "Babička Marie Králová se narodila 114 dní po svatbě rodičů."
+  }
+ ]
+}

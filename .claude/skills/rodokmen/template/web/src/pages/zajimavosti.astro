@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { Content } from '../generated/zajimavosti.md';
+import { lines, linesTitle } from '../lib/data.js';
+---
+<Base title="Zajímavosti">
+  <h1>Zajímavosti z rodokmenu</h1>
+  <p class="lead">Co nás při hledání nejvíc překvapilo – nejstarší předek, spojené větve, řemesla a osudy.</p>
+  <div class="prose"><Content /></div>
+
+  <div class="next-step">
+    <p><strong>Ponořte se hlouběji:</strong> projděte si jednotlivé rody, podívejte se na mapě, kde předci žili, nebo najděte kohokoli ve vějíři všech předků.</p>
+    <p><a class="btn" href="/rody/">{linesTitle(Object.keys(lines).length)} →</a> <a class="btn" href="/mapa/">Mapa →</a> <a class="btn" href="/vejir/">Vějíř předků →</a></p>
+  </div>
+</Base>

@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+import { config } from '../lib/data.js';
+const siteName = config.nazev || 'Rodokmen';
+const { title, description = config.popis || siteName, wide = false, wider = false, full = false } = Astro.props;
+const path = Astro.url.pathname;
+const groups = [
+  [['/', 'Úvod'], ...(config.maPribeh ? [['/pribehy/', config.pribeh?.menu || 'Příběh rodu']] : []), ['/zajimavosti/', 'Zajímavosti']],
+  [['/rody/', 'Rody'], ['/mapa/', 'Mapa'], ['/vejir/', 'Vějíř'], ['/predci/', 'Předci'], ['/zapisy/', 'Zápisy'], ['/hledame/', 'Co hledáme']],
+  [['/hledat/', 'Hledat']],
+];
+const current = (url) => ((url === '/' ? path === '/' : path.startsWith(url)) ? 'page' : undefined);
+---
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={description} />
+    <title>{title ? `${title} · ${siteName}` : siteName}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%235B4A3A'/><path d='M16 8v16M9 14l7-6 7 6' stroke='%23FBF8F2' stroke-width='2.5' fill='none'/></svg>" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{siteName}</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav">
+        {groups.map((g, i) => (
+          <div class={`nav-group nav-group-${i + 1}`}>
+            {g.map(([url, label]) => <a href={url} aria-current={current(url)}>{label}</a>)}
+          </div>
+        ))}
+      </nav>
+    </header>
+    <script>
+      const btn = document.querySelector<HTMLButtonElement>('.menu-btn');
+      btn?.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    </script>
+    <main class={full ? 'full' : wider ? 'wider' : wide ? 'wide' : ''} data-pagefind-body>
+      <slot />
+    </main>
+    {!full && <footer class="site-footer">
+      {config.zapati || 'Dohledáno v digitalizovaných matrikách'} · rodinný web, neveřejný
+    </footer>}
+  </body>
+</html>

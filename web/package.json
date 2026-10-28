@@ -1,0 +1,23 @@
+{
+  "name": "rodokmen-web",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "data": "node scripts/data.mjs",
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "nahled": "npm run data && npm run build && astro preview",
+    "nasadit": "npm run data -- --nasazeni && npm run build && npx -y netlify-cli@latest deploy --prod --dir=dist",
+    "pack": "tar -czf ../rodokmen-web.tar.gz --exclude=node_modules --exclude=dist --exclude=.astro .",
+    "deploy-caprover": "npm run data -- --nasazeni && npm run pack && caprover deploy -t ../rodokmen-web.tar.gz"
+  },
+  "dependencies": {
+    "astro": "^7.3.8",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

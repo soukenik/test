@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import PersonLink from '../components/PersonLink.astro';
+import { recordList, dateKey, href } from '../lib/data.js';
+const list = [...recordList].sort((a, b) => dateKey(a.date) - dateKey(b.date));
+const kinds = [...new Set(list.map((r) => r.kindName))];
+---
+<Base title="Zápisy z matrik">
+  <h1>Zápisy z matrik</h1>
+  <p class="lead">Všech {list.length} zápisů, na kterých rodokmen stojí – chronologicky. U každého je výřez snímku s vyznačeným místem, plné rozlišení a odkaz do archivu. Co v matrikách zatím chybí nebo si odporuje, najdete v přehledu <a href="/hledame/">co ještě hledáme</a>.</p>
+  <p class="chips">
+    <button class="chip" data-k="" type="button">vše</button>
+    {kinds.map((k) => <button class="chip" data-k={k} type="button">{k}</button>)}
+  </p>
+  <div class="table-box"><table>
+    <thead><tr><th>Datum</th><th>Druh</th><th>Zápis</th><th>Týká se</th></tr></thead>
+    <tbody>
+      {list.map((r) => (
+        <tr data-kind={r.kindName}>
+          <td class="small" style="white-space:nowrap">{r.date}</td>
+          <td class="small">{r.kindName}</td>
+          <td><a href={href.record(r.key)}>{r.title}</a><div class="small muted">{r.volume || r.vdesc}</div>
+            {r.orig && (
+              <details class="transcript">
+                <summary>Text z matriky a překlad</summary>
+                <div class="tr-grid"><div><h4>Přepis originálu</h4><p class="tr-orig">{r.orig}</p></div><div><h4>Překlad</h4><p class="tr-cs">{r.cs}</p></div></div>
+              </details>
+            )}
+          </td>
+          <td class="small">{r.people.map((s, i) => <>{i > 0 && ', '}<PersonLink slug={s} showYears={false} /></>)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table></div>
+  <script>
+    document.querySelectorAll<HTMLButtonElement>('button[data-k]').forEach((b) =>
+      b.addEventListener('click', () => {
+        document.querySelectorAll<HTMLTableRowElement>('tr[data-kind]').forEach((tr) => {
+          tr.hidden = !!b.dataset.k && tr.dataset.kind !== b.dataset.k;
+        });
+      })
+    );
+  </script>
+</Base>
