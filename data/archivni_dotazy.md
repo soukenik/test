@@ -8,3 +8,6 @@ Co by šlo zjistit jen v badatelně archivu nebo na matričním úřadě (a pro�
 - **Narození Otty Vojtáska (21. 9. 1931)** – narození mladší 100 let → matriční úřad (žádá přímý potomek, tj. Petr, s dokladem příbuzenství). Uvede rodiče a místo narození.
 - **Úmrtí Otty Vojtáska (1984, Slavičín)** – matriční úřad Slavičín. **Sňatek Otty a Jindřišky** – matriční úřad podle místa sňatku.
 - **Jan jako starosta a velitel hasičů** – kronika obce Rudimov (Státní okresní archiv Zlín – Klečůvka, fond Archiv obce Rudimov / MNV Rudimov) a kronika či archiv Sboru dobrovolných hasičů Rudimov.
+- **Jan jako „kulak“ (po 1948)** – SOkA Zlín: fondy MNV Rudimov (zápisy rady, seznamy „vesnických boháčů“, povinné dodávky) a JZD Rudimov;
+  případně Archiv bezpečnostních složek (abscr.cz), pokud byl Jan nebo rodina vyšetřováni či postiženi (akce K, vystěhování).
+- **Narození a úmrtí Jindřišky Vojtáskové, roz. Meislové** – matriční úřad Slavičín (narození 1938 mladší 100 let).

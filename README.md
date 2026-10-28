@@ -8,8 +8,8 @@ Vojtásek / Vojtásková, s „s“ bez háčku.
 | 1 | **Petr Vojtásek** | výchozí osoba | | | žijící |
 | – | **Miriam**, roz. Kovářová | manželka | | | žijící |
 | 2 | **Otto Vojtásek** | otec | 21. 9. 1931 | 1984, Slavičín | |
-| 3 | **Jindřiška**, roz. Meislová | matka | 24. 3. 1938 | | Slavičín – upřesnit |
-| 4 | **Jan Vojtásek** | dědeček | 31. 7. 1908, Rudimov (?) | 26. 6. 1982 | velitel hasičů, kapelník a starosta |
+| 3 | **Jindřiška**, roz. Meislová | matka | 24. 3. 1938, Slavičín (?) | Slavičín, datum doplnit | žila ve Slavičíně |
+| 4 | **Jan Vojtásek** | dědeček | 31. 7. 1908, Rudimov (?) | 26. 6. 1982 | velitel hasičů, kapelník, starosta, největší sedlák („kulak“) v obci |
 | 5 | **Anastázie**, roz. Viceníková (?) | babička | 16. 4. 1904, Rudimov (?) | 2. 12. 1976 | žena v domácnosti |
 
 ## Jak je projekt uspořádaný

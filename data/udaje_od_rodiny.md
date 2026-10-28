@@ -30,3 +30,9 @@ Zarámovaná fotografie (`dokumenty/jan-a-anastazie-foto.jpg`) a tužkou psaný 
 - Jan a Anastázie se **narodili nejspíše v Rudimově**.
 - Uniforma na fotografii je **hasičská**. Jan byl podle rodiny zároveň **velitelem (šéfem) hasičů, hlavním kapelníkem
   a starostou**; v diktátu ještě „největším vlakem“ – nesrozumitelné, upřesnit.
+
+## Co řekl uživatel – třetí doplnění (28. 10. 2026)
+- Jindřiška ve Slavičíně **žila a zemřela** a **měla se tam i narodit**. Už nežije; datum úmrtí zatím neznámé.
+- **Miri = Miriam, Petrova manželka** (dřívější „dcera“ byla omyl). Dceru Miri tedy v rodokmenu nevedeme.
+- „Největším vlakem“ = **„největším kulakem“** – Jan byl podle rodiny největší sedlák v obci (označení „kulak“
+  používal komunistický režim po roce 1948 pro velké hospodáře).

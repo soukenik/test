@@ -35,8 +35,10 @@ pak konec `research_log.md` a sekci „Rozpracováno“.
 6. Po změně dat spustím `python3 -I tools/kontrola.py`.
 
 ## Rozpracováno (aktualizovat průběžně)
-- Fáze 1 (rozhovor s rodinou): upřesnit Jindřišku (Slavičín – narození/úmrtí? žije?), „největším vlakem“ u Jana,
-  zda je Miri dcera, nebo jen manželka Miriam; sňatek Jana a Anastázie, sňatek Otty a Jindřišky, čísla domů.
+- Fáze 1 (rozhovor s rodinou): vyjasněno – Jindřiška ze Slavičína (už nežije), Miri = manželka Miriam, Jan „největší kulak“.
+  Zbývá: datum úmrtí Jindřišky, kde se narodil Otto, sňatek Jana a Anastázie, sňatek Otty a Jindřišky, čísla domů,
+  rodiče Jindřišky (Meislovi), kdy byl Jan starostou.
+- Čeká se na povolení domén archivů v nastavení cloudového prostředí (uživatel nastavuje z mobilu).
 - Fáze 2 (matriky): Rudimov spadá pod **MZA Brno (Acta Publica)** – pro skill bez nástroje, jen přes prohlížeč.
   **Z cloudové relace jsou všechny archivní portály zablokované sítí** (proxy vrací 403 na www.mza.cz, actapublica.eu,
   kramerius5.nkp.cz, ndk.cz, nominatim.openstreetmap.org…). Potřeba povolit domény v nastavení prostředí,

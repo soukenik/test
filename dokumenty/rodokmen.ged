@@ -29,7 +29,12 @@
 1 SEX F
 1 BIRT
 2 DATE 24 MAR 1938
-1 NOTE Rodina uvádí „také ve Slavičíně“ – upřesnit.
+2 PLAC Slavičín, Zlín, Česko
+2 NOTE Místo podle rodiny („měla se tam narodit“).
+1 RESI
+2 PLAC Slavičín, Zlín, Česko
+1 DEAT
+2 PLAC Slavičín, Zlín, Česko
 1 FAMS @F2@
 0 @I5@ INDI
 1 NAME Jan /Vojtásek/
@@ -40,7 +45,7 @@
 2 NOTE Místo jen podle rodiny („nejspíše“).
 1 DEAT
 2 DATE 26 JUN 1982
-1 OCCU velitel hasičů, kapelník, starosta
+1 OCCU velitel hasičů, kapelník, starosta, sedlák („největší kulak“ v obci)
 1 RESI
 2 PLAC Rudimov, Zlín, Česko
 1 NOTE Na fotografii v hasičské uniformě s vyznamenáními. Na rámu psáno „Vojtášek“, rodina píše Vojtásek.

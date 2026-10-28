@@ -23,14 +23,16 @@ P = {
  2: dict(n="Otto Vojtásek", y="1931–1984", st="fam",
          f=["* 21. 9. 1931", "† 1984 Slavičín"],
          note="Údaje od rodiny (Petr je jeho syn). Místo narození zatím neznámé – nejspíš Rudimov."),
- 3: dict(n="Jindřiška Meislová", y="* 1938", st="fam", f=[],
-         note="Provdaná Vojtásková. Rodina uvedla přesné datum narození a „také ve Slavičíně“ – upřesnit, zda šlo o narození, "
-              "bydliště, nebo úmrtí. Dokud není jisté, že nežije, uvádíme jen rok narození."),
+ 3: dict(n="Jindřiška Meislová", y="1938 – ?", st="fam",
+         f=["* 24. 3. 1938 Slavičín (?)", "bydlela ve Slavičíně", "† Slavičín (datum doplnit)"],
+         note="Provdaná Vojtásková. Podle rodiny ve Slavičíně žila a zemřela; narodit se tam „měla“ – místo narození proto s otazníkem. "
+              "Datum úmrtí zatím neznámé."),
  4: dict(n="Jan Vojtásek", y="1908–1982", st="fam",
-         f=["* 31. 7. 1908 Rudimov (?)", "velitel hasičů, kapelník a starosta – podle rodiny", "bydlel v Rudimově u Luhačovic",
-            "† 26. 6. 1982"],
+         f=["* 31. 7. 1908 Rudimov (?)", "velitel hasičů, kapelník a starosta – podle rodiny",
+            "největší sedlák („kulak“) v obci – podle rodiny", "bydlel v Rudimově u Luhačovic", "† 26. 6. 1982"],
          note="Data z tužkou psaného zápisu na zadní straně rámu rodinné fotografie; na fotografii v hasičské uniformě "
-              "s vyznamenáními. Podle rodiny byl velitelem hasičů, hlavním kapelníkem a starostou (obce Rudimov – ověřit). "
+              "s vyznamenáními. Podle rodiny byl velitelem hasičů, hlavním kapelníkem a starostou (obce Rudimov – ověřit) "
+              "a největším „kulakem“, tedy nejbohatším sedlákem – tak komunistický režim po roce 1948 označoval velké hospodáře. "
               "Místo narození Rudimov jen podle rodiny („nejspíše“). Na rámu psáno „Vojtášek“, rodina píše Vojtásek bez háčku."),
  5: dict(n="Anastázie Viceníková (?)", y="1904–1976", st="fam",
          f=["* 16. 4. 1904 Rudimov (?)", "žena v domácnosti", "bydlela v Rudimově u Luhačovic", "† 2. 12. 1976 (?)"],
@@ -66,6 +68,10 @@ ISSUES = [
   "Otevřené: rodina myslí, že oba v Rudimově. Sňatek (asi 1928–1931, před narozením Otty) zatím neznámý."),
  ("Byl Jan Vojtásek starostou Rudimova a velitelem tamních hasičů?",
   "Otevřené: tak to říká rodina. Ověřit v kronice obce, v historii hasičského sboru a v novinách."),
+ ("Jak se vedlo Janovi jako „kulakovi“ po roce 1948?",
+  "Otevřené: podle rodiny byl největším sedlákem v obci. Hledat v archivu MNV Rudimov a JZD (SOkA Zlín)."),
+ ("Kdy zemřela Jindřiška Vojtásková, roz. Meislová?",
+  "Otevřené: zemřela ve Slavičíně, datum zatím neznámé."),
 ]
 
 # Hypotézy o původu rodu nad rámec doložené linie (zobrazí se na stránce rodu):
