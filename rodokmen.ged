@@ -1,0 +1,48 @@
+0 HEAD
+1 SOUR RODOKMEN-VOJTASKOVI
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 LANG Czech
+0 @I1@ INDI
+1 NAME Jan /Vojtášek/
+2 GIVN Jan
+2 SURN Vojtášek
+1 SEX M
+1 BIRT
+2 DATE 31 JUL 1908
+1 DEAT
+2 DATE 26 JUN 1982
+1 RESI
+2 PLAC Rudimov, Slavičín, Zlín, Česko
+1 NOTE Na fotografii v uniformě s vyznamenáními. V rodině uváděn také jako Vitásek – ověřit v matrice.
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Anastázie /Viceníková/
+2 GIVN Anastázie
+2 SURN Viceníková
+1 NAME Anastázie /Vojtášková/
+2 TYPE married
+1 SEX F
+1 BIRT
+2 DATE 16 APR 1904
+1 DEAT
+2 DATE 2 DEC 1976
+2 NOTE První číslice dne je přepsaná, možné je i 7. 12. 1976.
+1 OCCU žena v domácnosti
+1 RESI
+2 PLAC Rudimov, Slavičín, Zlín, Česko
+1 NOTE Rodné příjmení je v zápisu špatně čitelné (Viceníková / Vicaníková / Vicenáková?).
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Miriam //
+1 SEX F
+1 OCCU žena v domácnosti
+1 NOTE Vztah k Vojtáškovým doplnit.
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 PLAC Rudimov, Slavičín, Zlín, Česko
+0 TRLR

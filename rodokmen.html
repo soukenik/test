@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodokmen Vojtáškových</title>
+<style>
+  :root {
+    --bg: #f6f1e7;
+    --paper: #fffaf0;
+    --ink: #2f2a24;
+    --muted: #7a6f60;
+    --line: #b9a888;
+    --accent: #8a5a2b;
+    --unknown: #efe7d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1d1a16;
+      --paper: #2a251f;
+      --ink: #efe6d6;
+      --muted: #a89c88;
+      --line: #6d604c;
+      --accent: #d9a466;
+      --unknown: #241f1a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1d1a16;
+    --paper: #2a251f;
+    --ink: #efe6d6;
+    --muted: #a89c88;
+    --line: #6d604c;
+    --accent: #d9a466;
+    --unknown: #241f1a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; text-align: center; letter-spacing: .02em; }
+  .subtitle { text-align: center; color: var(--muted); margin: 0 0 40px; }
+
+  .gen { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .gen-label {
+    text-align: center; font-size: .8rem; text-transform: uppercase;
+    letter-spacing: .12em; color: var(--muted); margin: 0 0 12px;
+  }
+  .branch { display: flex; gap: 12px; }
+
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  .card.unknown {
+    background: var(--unknown);
+    border-style: dashed;
+    color: var(--muted);
+    width: 150px;
+    font-size: .9rem;
+  }
+  .card.main { width: 260px; border-color: var(--accent); border-width: 2px; }
+  .card img {
+    width: 100%; aspect-ratio: 11 / 12; object-fit: cover;
+    border-radius: 6px; margin-bottom: 10px; filter: sepia(.25);
+  }
+  .name { font-weight: bold; font-size: 1.1rem; }
+  .maiden { color: var(--muted); font-style: italic; font-size: .9rem; }
+  .dates { margin-top: 6px; font-size: .95rem; }
+  .meta { margin-top: 6px; font-size: .85rem; color: var(--muted); }
+
+  .connector { width: 2px; height: 32px; background: var(--line); margin: 0 auto; }
+  .couple { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+  .marriage {
+    width: 48px; height: 2px; background: var(--accent); position: relative;
+  }
+  .marriage::after {
+    content: "⚭"; position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -55%); background: var(--bg);
+    color: var(--accent); padding: 0 4px; font-size: 1.1rem;
+  }
+
+  section.notes {
+    margin-top: 56px; background: var(--paper); border: 1px solid var(--line);
+    border-radius: 10px; padding: 20px 24px;
+  }
+  section.notes h2 { margin-top: 0; font-size: 1.25rem; }
+  section.notes li { margin-bottom: 6px; }
+  .src { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .src figure { margin: 0; }
+  .src img { width: 100%; border-radius: 8px; border: 1px solid var(--line); }
+  .src figcaption { font-size: .85rem; color: var(--muted); margin-top: 4px; }
+
+  @media (max-width: 640px) {
+    .couple { flex-direction: column; }
+    .marriage { width: 2px; height: 36px; }
+    .branch { flex-wrap: wrap; justify-content: center; }
+    .card.main { width: 100%; max-width: 300px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rodokmen Vojtáškových</h1>
+  <p class="subtitle">Rudimov u Luhačovic (dnes místní část Slavičína), okres Zlín</p>
+
+  <!-- Generace rodičů (zatím neznámí) -->
+  <p class="gen-label">Rodiče</p>
+  <div class="gen">
+    <div class="branch">
+      <div class="card unknown">Otec Jana<br><small>Vojtášek</small><br><small>doplnit</small></div>
+      <div class="card unknown">Matka Jana<br><small>doplnit</small></div>
+    </div>
+    <div class="branch">
+      <div class="card unknown">Otec Anastázie<br><small>rodné příjmení?</small><br><small>doplnit</small></div>
+      <div class="card unknown">Matka Anastázie<br><small>doplnit</small></div>
+    </div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- Hlavní manželský pár -->
+  <p class="gen-label">Manželé</p>
+  <div class="couple">
+    <div class="card main">
+      <img src="foto/jan.jpg" alt="Portrét Jana Vojtáška v uniformě">
+      <div class="name">Jan Vojtášek</div>
+      <div class="dates">* 31. 7. 1908<br>† 26. 6. 1982</div>
+      <div class="meta">zemřel ve věku 73 let · Rudimov<br>na fotografii v uniformě s vyznamenáními</div>
+    </div>
+    <div class="marriage" aria-label="manželé"></div>
+    <div class="card main">
+      <img src="foto/anastazie.jpg" alt="Portrét Anastázie Vojtáškové">
+      <div class="name">Anastázie Vojtášková</div>
+      <div class="maiden">roz. Viceníková (?)</div>
+      <div class="dates">* 16. 4. 1904<br>† 2. 12. 1976</div>
+      <div class="meta">zemřela ve věku 72 let · Rudimov<br>žena v domácnosti</div>
+    </div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- Další generace -->
+  <p class="gen-label">Děti a další příbuzní</p>
+  <div class="gen">
+    <div class="card unknown">Děti Jana a Anastázie<br><small>doplnit</small></div>
+    <div class="card">
+      <div class="name">Miriam</div>
+      <div class="meta">žena v domácnosti<br>vztah k Vojtáškovým doplnit</div>
+    </div>
+  </div>
+
+  <section class="notes">
+    <h2>Poznámky k údajům</h2>
+    <ul>
+      <li>Jména a data pocházejí z tužkou psaného zápisu na zadní straně zarámované fotografie.</li>
+      <li><strong>Příjmení:</strong> zápis zní „Jan Vojtášek“ a „Vojtášková“. V rodině se uvádí také „Vitásek / Vitáskovi“. Je třeba ověřit v matrice.</li>
+      <li><strong>Rodné příjmení Anastázie</strong> je v závorce špatně čitelné, nejspíš „Viceníková“. Možná je to i „Vicaníková“ nebo „Vicenáková“.</li>
+      <li><strong>Datum úmrtí Anastázie:</strong> první číslice je přepsaná, nejspíš 2. 12. 1976. Možné je i 7. 12. 1976.</li>
+      <li>Anastázie byla o čtyři roky starší než Jan.</li>
+      <li>Kde ověřit: matriky Rudimova jsou v <em>Moravském zemském archivu v Brně</em>, online na <em>actapublica.eu</em>. Narození z let 1904 a 1908 jsou už veřejně dostupná. Pro sňatek a úmrtí se obraťte na matriční úřad ve Slavičíně.</li>
+    </ul>
+  </section>
+
+  <div class="src">
+    <figure>
+      <img src="foto/jan-a-anastazie-foto.jpg" alt="Původní zarámovaná fotografie Jana a Anastázie">
+      <figcaption>Původní fotografie: Jan (vlevo) a Anastázie (vpravo).</figcaption>
+    </figure>
+    <figure>
+      <img src="foto/zadni-strana-zapis.jpg" alt="Tužkou psaný zápis jmen a dat na zadní straně rámu">
+      <figcaption>Zápis na zadní straně rámu.</figcaption>
+    </figure>
+  </div>
+</main>
+</body>
+</html>
